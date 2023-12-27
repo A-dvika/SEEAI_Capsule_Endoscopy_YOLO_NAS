@@ -62,10 +62,7 @@ def download_file(url, save_name):
     else:
         print('File already present')
 
-download_file(
-    'https://www.dropbox.com/s/xc2890eh8ujy3cu/hituav-a-highaltitude-infrared-thermal-dataset.zip?dl=1',
-    'hituav-a-highaltitude-infrared-thermal-dataset.zip'
-)
+
 
 # Unzip the data file
 def unzip(zip_file=None):
@@ -361,7 +358,6 @@ for image in tqdm(all_images, total=len(all_images)):
 
 """## Overlapped Ground Truth Samples"""
 
-classes = ['Person', 'Car', 'Bicycle', 'OtherVechicle', 'DontCare']
 
 # Function to convert bounding boxes in YOLO format to xmin, ymin, xmax, ymax.
 def yolo2bbox(bboxes):
